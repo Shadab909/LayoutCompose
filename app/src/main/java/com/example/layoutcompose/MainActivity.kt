@@ -19,6 +19,8 @@ class MainActivity : ComponentActivity() {
                 Column {
                     Content()
                     Text(text = "NewCommit")
+                    bloody hell
+                    i want to revert
                 }
                 
             }
