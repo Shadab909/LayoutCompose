@@ -12,18 +12,13 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun SimpleLayout() {
-
+fun SimpleLayoutModifier() {
     Column {
         repeat(5){
             Text(text = "Apple" , Modifier.firstBaselineToTop(32.dp))
         }
-
         Text(text = "ball",Modifier.padding(top = 32.dp))
     }
-
-
-
 }
 
 fun Modifier.firstBaselineToTop(
@@ -43,9 +38,6 @@ fun Modifier.firstBaselineToTop(
             // Where the composable gets placed
             placeable.placeRelative(0, placeableY)
         }
-
-
-
 
     }
 )
